@@ -1,3 +1,45 @@
+
+$fontsizeNavbarLi: 14px;
+$fontsizeNavbarName: 20px;
+
+
+//local
+$marginNavbar: 8em;
+
 .Navbar{
-    color: white;
+    @include alignCenter;
+    width: 100%;
+    height: 84px;
+    
+    //Name
+    p{
+        /* Body lg / Bold */
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: $fontsizeNavbarName;
+        line-height: 28px;
+        margin-left: $marginNavbar;
+    }
+
+    //List
+    ul{
+        @include alignCenter;
+        margin-left: auto;
+        //item
+        li{
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: $fontsizeNavbarLi;
+            line-height: 20px;
+            margin-right: 3em;
+            text-decoration: none;
+            list-style: none;
+        }
+    }  
+    
+    //Button
+    button{
+        margin-right: $marginNavbar;
+        @include buttonDonate();
+    }
 }

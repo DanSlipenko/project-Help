@@ -72,3 +72,21 @@ $lightGreen: #F0FEFA;
   border-radius: 6px;
 }
 
+
+@mixin alignCenter(){
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@mixin buttonDonate() {
+  background-color: $darkPurple;
+  color: white;
+  border-radius: 100px;
+  align-items: center;
+  padding: 10px 16px;
+  @include alignCenter;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
