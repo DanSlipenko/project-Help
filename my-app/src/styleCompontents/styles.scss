@@ -11,70 +11,6 @@ $lightPurple: #DFD8FC;
 $darkGreen: #58C2A2;
 $lightGreen: #F0FEFA;
 
-//Shadows 
-@mixin shadowXs(){
-  background: #FFFFFF;
-  border: 1px solid #E5E7EB;
-  box-sizing: border-box;
-  box-shadow: 0px 2px 8px -3px rgba(28, 44, 64, 0.16);
-  border-radius: 6px;
-} 
-//to use @include shadowXs();
-
-@mixin shadowSm(){
-  background: #FFFFFF;
-  /* Neutral/200 */
-  border: 1px solid #E5E7EB;
-  box-sizing: border-box;
-  /* Shadow sm */
-  box-shadow: 0px 4px 12px -3px rgba(28, 44, 64, 0.1);
-  border-radius: 6px;
-}
-
-@mixin shadowMd(){
-  /* White */
-  background: #FFFFFF;
-  /* Neutral/200 */
-  border: 1px solid #E5E7EB;
-  box-sizing: border-box;
-  /* Shadow md */
-  box-shadow: 0px 8px 16px -4px rgba(28, 44, 64, 0.08);
-  border-radius: 6px;
-}
-
-@mixin shadowLg(){
-  /* White */
-  background: #FFFFFF;
-  /* Neutral/200 */
-  border: 1px solid #E5E7EB;
-  box-sizing: border-box;
-  /* Shadow lg */
-  box-shadow: 0px 10px 20px rgba(28, 44, 64, 0.08);
-  border-radius: 6px;
-}
-
-@mixin shadowXl(){
-  /* White */
-  background: #FFFFFF;
-  /* Neutral/200 */
-  border: 1px solid #E5E7EB;
-  box-sizing: border-box;
-  /* Shadow xl */
-  box-shadow: 24px 24px 40px -12px rgba(28, 44, 64, 0.08);
-  border-radius: 6px;
-}
-
-@mixin shadow2xl(){
-  /* White */
-  background: #FFFFFF;
-  /* Neutral/200 */
-  border: 1px solid #E5E7EB;
-  box-sizing: border-box;
-  /* Shadow 2xl */
-  box-shadow: 8px 16px 48px rgba(28, 44, 64, 0.12);
-  border-radius: 6px;
-}
-
 
 @mixin alignCenter(){
   justify-content: center;
@@ -109,32 +45,7 @@ $lightGreen: #F0FEFA;
   }
 }
 
-@mixin buttonDonateL() {
-  // background-color: $darkPurple;
-  // color: white;
-  // border-radius: 100px;
-  // box-shadow: #5E5DF0 0 10px 20px -10px;
-  // box-sizing: border-box;
-  // cursor: pointer;
-  // align-items: center;
-  // padding: 15px 24px;
-  // @include alignCenter;
-  // font-weight: 500;
-  // font-size: 15px;
-  // line-height: 16px;
-  // opacity: 1;
-  // outline: 0 solid transparent;
-  // user-select: none;
-  // touch-action: manipulation;
-  // width: fit-content;
-  // word-break: break-word;
-  // border: 0;
-  // transition: 200ms;
-  // &:hover{
-  //   color: black;
-  //   background-color: $lightPurple;
-  // }
-}
+$btnXLTextSizeFont: 0.25em;
 
 @mixin buttonXL(){
   appearance: none;
@@ -145,7 +56,7 @@ $lightGreen: #F0FEFA;
         border-radius: 8px;
         background-color: $darkPurple;
         background-image: linear-gradient(to right, transparent 50%, $lightPurple 50%);
-        font-size: $textSize;
+        font-size: $btnXLTextSizeFont;
         transition: 0.4s;
         color: white;
         border-radius: 100px;
@@ -155,7 +66,6 @@ $lightGreen: #F0FEFA;
         &:hover{
             color: black;
             background-position: 100%;
-            box-shadow: #5E5DF0 0 10px 20px -10px;
-            
+            //box-shadow: #5E5DF0 0 10px 20px -10px;
         }
 }

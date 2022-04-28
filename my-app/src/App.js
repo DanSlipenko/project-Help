@@ -12,8 +12,10 @@ import Footer from './compontents/footer/Footer'
 function App() {
   return (
     <>
-      <Navbar />
-      <Main />
+      <div className='Wrapper'>
+        <Navbar />
+        <Main />
+      </div>
       <Ministries />
       <Comparison />
       <Connect />

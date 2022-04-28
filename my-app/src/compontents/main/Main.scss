@@ -3,96 +3,22 @@
     padding: 10% 20%;
     text-align: center;
     align-items: center;
+    height: 100%; 
     p{
         font-weight: 500;
         font-size: 20px;
         line-height: 28px;
         text-align: center;
-        font-feature-settings: 'liga' off;
-        margin:0;
+        margin:10px;
     }
     div{
-        
         font-weight: 600;
         font-size: 72px;
         line-height: 90px;
         text-align: center;
         letter-spacing: -0.025em;
-        font-feature-settings: 'liga' off;
-    }
-    button{
-        @include buttonDonateL;
-        align-self: center;
-        justify-content: center;
-        align-items: center;
     }
 }
-
-
-
-
-
-
-
-
-
-  
-  /* optional reset for presentation */
-
-  .container {
-    padding-top: 50px;
-    margin: 0 auto;
-    width: 40%;
-    text-align: center;
-
-    .button {
-        display: inline-block;
-
-        //padding: 10px 5px;
-        border-radius: 10rem;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 15px;
-        letter-spacing: .15rem;
-        transition: all .3s;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        &:after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: $darkPurple;
-          border-radius: 10rem;
-          z-index: -2;
-        }
-        &:before {
-          content: '';
-          position: absolute;
-          //bottom: 0;
-          //left: 0;
-          width: 0%;
-          height: 100%;
-          background-color: darken($darkPurple, 15%);
-          transition: all .3s;
-          border-radius: 10rem;
-          z-index: -1;
-        }
-        &:hover {
-          color: #fff;
-          &:before {
-            width: 100%;
-          }
-        }
-      }
-  }
-
-$textSize: 0.25em;
-
-
 .buttonXl{
     display: flex;
     width: 100%;
