@@ -83,30 +83,30 @@ $lightGreen: #F0FEFA;
 }
 
 @mixin buttonDonate() {
-  // background-color: $darkPurple;
-  // color: white;
-  // border-radius: 100px;
-  // box-shadow: #5E5DF0 0 10px 20px -10px;
-  // box-sizing: border-box;
-  // cursor: pointer;
-  // align-items: center;
-  // padding: 15px 24px;
-  // @include alignCenter;
-  // font-weight: 500;
-  // font-size: 15px;
-  // line-height: 16px;
-  // opacity: 1;
-  // outline: 0 solid transparent;
-  // user-select: none;
-  // touch-action: manipulation;
-  // width: fit-content;
-  // word-break: break-word;
-  // border: 0;
-  // transition: 200ms;
-  // &:hover{
-  //   color: black;
-  //   background-color: $lightPurple;
-  // }
+  background-color: $darkPurple;
+  color: white;
+  border-radius: 100px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  align-items: center;
+  padding: 15px 24px;
+  @include alignCenter;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  transition: 200ms;
+  &:hover{
+    color: black;
+    background-color: $lightPurple;
+  }
 }
 
 @mixin buttonDonateL() {
@@ -136,3 +136,26 @@ $lightGreen: #F0FEFA;
   // }
 }
 
+@mixin buttonXL(){
+  appearance: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 20px 40px;
+        border-radius: 8px;
+        background-color: $darkPurple;
+        background-image: linear-gradient(to right, transparent 50%, $lightPurple 50%);
+        font-size: $textSize;
+        transition: 0.4s;
+        color: white;
+        border-radius: 100px;
+        background-size: 250%;
+        background-position: 0%;
+        text-transform: uppercase;
+        &:hover{
+            color: black;
+            background-position: 100%;
+            box-shadow: #5E5DF0 0 10px 20px -10px;
+            
+        }
+}
