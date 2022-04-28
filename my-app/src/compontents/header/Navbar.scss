@@ -1,6 +1,7 @@
 
-$fontsizeNavbarLi: 14px;
+$fontsizeNavbarLi: 17px;
 $fontsizeNavbarName: 20px;
+$grey: rgb(87, 86, 86);
 
 
 //local
@@ -20,12 +21,13 @@ $marginNavbar: 8em;
         line-height: 28px;
         margin-left: $marginNavbar;
     }
-
+    transition: 200ms;
     //List
     ul{
         @include alignCenter;
         margin-left: auto;
         //item
+        transition: 200ms;
         li{
             font-family: 'Inter';
             font-weight: 500;
@@ -34,6 +36,11 @@ $marginNavbar: 8em;
             margin-right: 3em;
             text-decoration: none;
             list-style: none;
+            padding: 2px;
+            cursor: pointer;
+            &:hover{
+                color: $grey;
+            }
         }
     }  
     

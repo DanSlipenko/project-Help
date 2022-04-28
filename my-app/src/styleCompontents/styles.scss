@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
 //Main colors
 
 //Primary
@@ -80,13 +83,56 @@ $lightGreen: #F0FEFA;
 }
 
 @mixin buttonDonate() {
-  background-color: $darkPurple;
-  color: white;
-  border-radius: 100px;
-  align-items: center;
-  padding: 10px 16px;
-  @include alignCenter;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+  // background-color: $darkPurple;
+  // color: white;
+  // border-radius: 100px;
+  // box-shadow: #5E5DF0 0 10px 20px -10px;
+  // box-sizing: border-box;
+  // cursor: pointer;
+  // align-items: center;
+  // padding: 15px 24px;
+  // @include alignCenter;
+  // font-weight: 500;
+  // font-size: 15px;
+  // line-height: 16px;
+  // opacity: 1;
+  // outline: 0 solid transparent;
+  // user-select: none;
+  // touch-action: manipulation;
+  // width: fit-content;
+  // word-break: break-word;
+  // border: 0;
+  // transition: 200ms;
+  // &:hover{
+  //   color: black;
+  //   background-color: $lightPurple;
+  // }
 }
+
+@mixin buttonDonateL() {
+  // background-color: $darkPurple;
+  // color: white;
+  // border-radius: 100px;
+  // box-shadow: #5E5DF0 0 10px 20px -10px;
+  // box-sizing: border-box;
+  // cursor: pointer;
+  // align-items: center;
+  // padding: 15px 24px;
+  // @include alignCenter;
+  // font-weight: 500;
+  // font-size: 15px;
+  // line-height: 16px;
+  // opacity: 1;
+  // outline: 0 solid transparent;
+  // user-select: none;
+  // touch-action: manipulation;
+  // width: fit-content;
+  // word-break: break-word;
+  // border: 0;
+  // transition: 200ms;
+  // &:hover{
+  //   color: black;
+  //   background-color: $lightPurple;
+  // }
+}
+
