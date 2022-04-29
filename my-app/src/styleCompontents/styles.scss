@@ -69,3 +69,52 @@ $btnXLTextSizeFont: 0.25em;
             //box-shadow: #5E5DF0 0 10px 20px -10px;
         }
 }
+
+//Line
+.Line{
+  @include alignCenter;
+  .line-container{
+      width: 100%;
+      top: 90%;
+      height: 30px;
+      align-self: center;
+      @include alignCenter;
+      padding: 8px;
+      .line-conatainer--line{
+      width: 95%;
+      height: 45px;
+      position: relative;
+      @include alignCenter;
+      &::after, &::before{
+        content: '';
+        position: absolute;
+        margin: auto;
+        height: 1px;
+        width: 49%;
+      }
+      &::after{
+        left: 0;
+        top: 50%;
+        background: linear-gradient(211deg, #9CA3AF 0%, rgba(156, 163, 175, 0) 0.18%, rgba(156, 163, 175, 0) 0%, rgba(156, 163, 175, 0) 0.38%, #9CA3AF 42%);
+      }
+      &::before{
+        right: 0;
+        top: 50%;
+        background: linear-gradient(84deg, #9CA3AF 0%, rgba(156, 163, 175, 0) 0.18%, rgba(156, 163, 175, 0) 0%, rgba(156, 163, 175, 0) 0.38%, #9CA3AF 42%);
+      }
+        .line-container--circle{
+          @include alignCenter;
+            display: flex;
+          .line-container--arrow{
+            margin-top: 0.5%;
+            border-left: 1px solid rgb(122, 122, 122);
+            border-bottom: 1px solid rgb(122, 122, 122);
+            width: 1rem;
+            height: 1rem;
+            transform: rotate(315deg);
+          }
+        }
+      }
+    }
+}
+

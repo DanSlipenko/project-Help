@@ -9,9 +9,6 @@ function Main(){
                 <div className='buttonXl'>
                         <button>Donate</button>  
                 </div>  
-                <div className='bottomLine'>
-                    
-                </div>
             </div>
     )
 }

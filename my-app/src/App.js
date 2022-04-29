@@ -2,6 +2,7 @@
 import './App.scss';
 import Navbar from './compontents/header/Navbar'
 import Main from './compontents/main/Main'
+import Line from './compontents/main/Line'
 import Ministries from './compontents/ministries/Ministries'
 import Comparison from './compontents/comparison/Comparison'
 import Connect from './compontents/connect/Connect'
@@ -15,6 +16,7 @@ function App() {
       <div className='Wrapper'>
         <Navbar />
         <Main />
+        <Line />
       </div>
       <Ministries />
       <Comparison />
